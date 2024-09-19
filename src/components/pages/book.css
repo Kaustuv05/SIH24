@@ -1,0 +1,151 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container background */
+.aboutTop {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/image1.png'); /* Ensure this path is correct */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+/* Neon-inspired background for the bottom section */
+.aboutBottom {
+  width: 100%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0); /* Slightly transparent dark background */
+  text-align: center;
+  margin-top: 20px;
+  
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+.aboutBottom h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #39ff14;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 8px rgba(57, 255, 20, 0.8);
+}
+
+/* Styling for the menu container */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Styling for the menu list */
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Styling for each menu item */
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  background-color: rgba(26, 26, 26, 0.9); /* Slight transparency for a layered effect */
+  box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+}
+
+.menuItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Image container */
+.menuItem > div {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Text colors for the menu item */
+.menuItem h1 {
+  font-size: 1.5rem;
+  color: #ff073a;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(255, 7, 58, 0.8);
+}
+
+.menuItem h3 {
+  font-size: 1rem;
+  color: #00d1ff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Button styling */
+.menuItem a.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff00ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 0px 8px rgba(255, 0, 255, 0.7);
+}
+
+.menuItem a.button-link:hover {
+  background-color: #ff1493;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 15px rgba(255, 20, 147, 0.8);
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menuItem {
+    width: 90%;
+  }
+
+  .aboutBottom h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Design: For tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .menuItem {
+    width: 45%;
+  }
+}
