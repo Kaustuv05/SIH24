@@ -19,8 +19,8 @@ const PlayGames = () => {
   const games = [
     { id: 1, name: "Memory Game", link: "memory.html", isExternal: true },
     { id: 2, name: "Quiz", link: "/game-2" },
-    { id: 3, name: "Snake and ladders", link: "/game-3" },
-    { id: 4, name: "Spin the wheel", link: "/game-4" },
+    { id: 3, name: "Snake and ladders", link: "snake.html", isExternal: true },
+    { id: 4, name: "Spin the wheel", link: "spin.html" , isExternal: true},
     { id: 5, name: "Card Game", link: "/game-5" },
     { id: 6, name: "Monopoly", link: "/game-6" }
   ];

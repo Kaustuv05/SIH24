@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
             <li className="navbar-cat"><Link to="/historical-background">Historical Background</Link></li>
             <li className="navbar-cat"><Link to="/explore">Explore</Link></li>
-            <li className="navbar-cat"><Link to="/community-forum">Community Forum</Link></li>
+            <li className="navbar-cat"> <a href="/forum.html" target="_self" rel="noopener noreferrer">Community Forum</a></li>
             <li className="navbar-cat"><Link to="/contact">Contact</Link></li>
           </ul>
         </li>

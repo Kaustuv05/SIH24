@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum Portal</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li class="category active">Fundamental rights & duties</li>
+                <li class="category">Indian Governance system</li>
+                <li class="category">Constitutional amendments</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h3 id="categoryTitle" style="font-weight: 900;"></h3>
+            </div>
+
+            <div class="posts" id="postsContainer"></div>
+
+            <div class="new-post">
+                <input type="text" id="username" placeholder="Your Name" required />
+                <textarea id="postContent" placeholder="Write your post..." required></textarea>
+                <button id="postButton">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script1.js"></script>
+</body>
+</html>
